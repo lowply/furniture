@@ -1,0 +1,99 @@
+// @import "bootstrap-compass"
+@import "bootstrap"
+// @import "font-awesome-compass"
+@import "font-awesome"
+// import from static/assets/sass/highlight.js 
+@import "highlight.js/hybrid.scss"
+@import "http://fonts.googleapis.com/css?family=Open+Sans:300,400"
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
++keyframes(anime)
+  0%
+    opacity: 0
+  100%
+    opacity: 100
+
+// Override bootstrap's CSS
+pre
+  background-color: #1d1f21
+  border: none
+  code
+    word-wrap: normal
+    white-space: pre
+
+blockquote
+  font-size: 14px
+
+body
+  // .HiraKakuInterface-W2 is only for Yosemite. Change it once El Capitan has released.
+  // I don't have Japanese on Windows. 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", ".HiraKakuInterface-W2", "Meiryo", sans-serif
+  background-color: #f9f9f9
+  div.container
+    margin: 100px auto
+    div.row
+      div.col-md-8
+        h1
+          margin-bottom: 100px
+          font-family: "Open Sans"
+          font-size: 20px
+          font-weight: bold
+          a
+            color: #333
+          a:hover
+            text-decoration: none
+            color: #999
+        >footer
+          margin: 40px 0 0
+          padding: 40px 0 0
+          border-top: solid 1px #999
+  div.container.index,
+  div.container.list
+    div.row
+      div.col-md-8
+        section
+          margin-bottom: 20px
+          > a
+            font-size: 120%
+          div.meta
+            color: #999
+        footer
+          span.postmeta
+            display: none
+  div.container.index
+    div.row
+      div.col-md-8
+        div.top
+          width: 600px
+          height: 413px
+          margin: 0 auto 80px
+          background: url("/assets/img/main.png") no-repeat center center
+          animation-name: anime
+          animation-duration: 0.5s
+          animation-timing-function: ease
+          animation-direction: normal
+  div.container.article
+    div.row
+      div.col-md-8
+        section
+          article
+            margin: 100px auto
+            h3
+              margin: 40px 0 20px
+            p
+              a
+                margin: 0 0.2em
+        div.share
+          overflow: hidden
+          div.twitter-share,
+          div.fb-like,
+          div.hb-button
+            float: left
+            margin-right: 0.8em
