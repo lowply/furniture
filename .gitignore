@@ -28,3 +28,7 @@ node_modules
 
 *.sass-cache
 Gemfile.lock
+
+static/assets/fonts/bootstrap
+static/assets/fonts/font-awesome
+static/assets/sass/highlight.js
