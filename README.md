@@ -23,16 +23,17 @@ See [theme.toml](https://github.com/lowply/furniture/blob/master/theme.toml) for
 
 ### Dependencies
 
-Furniture uses:
-- [nodebrew](https://github.com/hokaccha/nodebrew)
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) (no [bower](http://bower.io/))
-- [browserify](http://browserify.org/)
-- [gulp](http://gulpjs.com/)
+JavaScript:
 
-- [rbenv](https://github.com/sstephenson/rbenv)
-- [sass](http://sass-lang.com/) with .sass extension
-- [compass](http://compass-style.org/) through gulp
+- [nodebrew](https://github.com/hokaccha/nodebrew) + [node](https://nodejs.org/) + [npm](https://www.npmjs.com/) (no [bower](http://bower.io/))
+- [gulp](http://gulpjs.com/) + [browserify](http://browserify.org/)
+
+Ruby:
+
+- [rbenv](https://github.com/sstephenson/rbenv) + [Ruby](https://www.ruby-lang.org/) + [gem](https://rubygems.org/) 
+- [sass](http://sass-lang.com/) + [compass](http://compass-style.org/)
+
+Frontend:
 
 - [jquery](https://jquery.com/)
 - [bootstrap](http://getbootstrap.com/)
@@ -57,7 +58,7 @@ v0.12.7
 
 To install all dependencies, run `npm install` in the theme directory.
 
-##### Ruby
+### Ruby
 
 Versions as of Aug 2015:
 
@@ -69,7 +70,7 @@ Versions as of Aug 2015:
 ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]
 ```
 
-##### gem
+### gem
 
 To install all dependencies, run `bundle install` in the theme directory.
 
