@@ -98,7 +98,7 @@ gulp.task('js:watch', function () {
 	return compile_js(false, true)
 });
 
-gulp.task('sass:compile', function(){
+gulp.task('sass:compile', ['sass:copy'], function(){
 	return compile_css(true, false)
 })
 
