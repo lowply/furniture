@@ -110,5 +110,5 @@ gulp.task('sass:copy', function () {
 	return copy_assets()
 });
 
-gulp.task('default', ['sass:compile', 'js:compile', 'sass:copy']);
+gulp.task('default', ['sass:copy', 'sass:compile', 'js:compile']);
 
