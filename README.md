@@ -25,19 +25,19 @@ See [theme.toml](https://github.com/lowply/furniture/blob/master/theme.toml) for
 
 JavaScript:
 
-- [nodebrew](https://github.com/hokaccha/nodebrew) + [node](https://nodejs.org/) + [npm](https://www.npmjs.com/) (no [bower](http://bower.io/))
-- [gulp](http://gulpjs.com/) + [browserify](http://browserify.org/)
+- [nodebrew](https://github.com/hokaccha/nodebrew) + [Node](https://nodejs.org/) + [npm](https://www.npmjs.com/) (no [bower](http://bower.io/))
+- [gulp](http://gulpjs.com/) + [Browserify](http://browserify.org/)
 
 Ruby:
 
 - [rbenv](https://github.com/sstephenson/rbenv) + [Ruby](https://www.ruby-lang.org/) + [gem](https://rubygems.org/) 
-- [sass](http://sass-lang.com/) + [compass](http://compass-style.org/)
+- [Sass](http://sass-lang.com/) + [Compass](http://compass-style.org/)
 
 Frontend:
 
-- [jquery](https://jquery.com/)
-- [bootstrap](http://getbootstrap.com/)
-- [font-awesome](http://fortawesome.github.io/Font-Awesome/)
+- [jQuery](https://jquery.com/)
+- [Bootstrap](http://getbootstrap.com/)
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 - [highlight.js](https://highlightjs.org/)
 
 ### Node
