@@ -10,13 +10,14 @@
 	{{ with .Site.Params.twitter }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
 	<meta name="twitter:title" content="{{if eq .Title .Site.Title}}{{ .Site.Title }}{{else}}{{ .Title }} - {{ .Site.Title }}{{end}}">
 	<meta name="twitter:description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
+	<meta property="fb:app_id" content="1612273492388081">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="{{if eq .Title .Site.Title}}{{ .Site.Title }}{{else}}{{ .Title }} - {{ .Site.Title }}{{end}}">
 	<meta property="og:url" content="{{ .Permalink }}"/>
-	{{ with .Site.Params.ogimg }}<meta property="og:image" content="http://fixture.jp/assets/img/og.png"/>{{ end }}
+	<meta property="og:image" content="http://fixture.jp/assets/img/og.png"/>
 	<meta property="og:description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
 	<link rel="stylesheet" href="/assets/css/main.css">
 	<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="/index.xml" />
 </head>
 <body>
-
+{{ partial "_fb.html" . }}
