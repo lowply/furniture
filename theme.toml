@@ -1,11 +1,11 @@
 # theme.toml
 name = "Furniture"
 license = "MIT"
-licenselink = "https://github.com/lowply/furniture/blob/master/LICENSE.md"
+licenselink = "https://github.com/lowply/furniture/blob/master/LICENSE"
 description = "Furniture - A hugo theme for fixture.jp"
 homepage = "https://github.com/lowply/furniture/"
 tags = ["blog"]
-min_version = 1.0
+min_version = 0.15
 
 [author]
   name = "lowply"
