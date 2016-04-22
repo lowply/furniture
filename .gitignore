@@ -1,9 +1,2 @@
 node_modules
-
-*.sass-cache
-
-static/assets/fonts/bootstrap
-static/assets/fonts/font-awesome
-static/assets/sass/highlight.js
-static/assets/js/bundle.js
-static/assets/css/main.css
+static/assets/*

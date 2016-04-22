@@ -1,41 +1,16 @@
-// @import "bootstrap-compass"
-@import "bootstrap"
-// @import "font-awesome-compass"
-@import "font-awesome"
-// import from static/assets/sass/highlight.js 
-@import "highlight.js/hybrid.scss"
-@import "http://fonts.googleapis.com/css?family=Open+Sans:300,400"
-
-=keyframes($name)
-  @-webkit-keyframes #{$name}
-    @content
-  @-moz-keyframes #{$name}
-    @content
-  @keyframes #{$name}
-    @content
-
-+keyframes(anime)
-  0%
-    opacity: 0
-  100%
-    opacity: 100
-
-// Override bootstrap's CSS
-pre
-  background-color: #1d1f21
-  border: none
-  code
-    word-wrap: normal
-    white-space: pre
-
-blockquote
-  font-size: 14px
-
 body
-  // .HiraKakuInterface-W2 is only for Yosemite. Change it once El Capitan has released.
-  // I don't have Japanese on Windows. 
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", ".HiraKakuInterface-W2", "Meiryo", sans-serif
-  background-color: #f9f9f9
+  // Override bootstrap's CSS
+  pre
+    code.hljs
+      padding: 1em
+      border-radius: 4px
+    //   word-wrap: normal
+    //   white-space: pre
+
+  blockquote
+    font-size: 14px
+    background-color: #f9f9f9
+
   div.container
     margin: 100px auto
     div.row
@@ -96,3 +71,10 @@ body
           div.hb-button
             float: left
             margin-right: 0.8em
+          div.fb-like
+            span
+              // Fix for FB button valign
+              vertical-align: baseline !important;
+        footer
+          div.meta
+            font-size: small
