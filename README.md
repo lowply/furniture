@@ -1,6 +1,6 @@
 # Furniture - A hugo theme for fixture.jp
 
-This theme made for [fixture.jp](http://fixture.jp/).
+This theme is made for [fixture.jp](http://fixture.jp/).
 
 ### Theme config
 
