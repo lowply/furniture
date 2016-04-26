@@ -9,7 +9,7 @@
 			<section class="post">
 				<a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
 				<div class="meta">
-					<i class="fa fa-chevron-right"></i>
+					<i class="fa fa-caret-right" aria-hidden="true"></i>
 					<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan, 2006" }}</time> {{ if isset .Params "categories" }} / {{ $baseUrl := .Site.BaseURL }} {{ range .Params.categories }}<a class="post-category" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }} {{ end }}
 				</div>
 			</section>
