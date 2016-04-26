@@ -9,12 +9,11 @@ destroy:
 clean:
 	rm -rf static/assets/*
 
-build:
-	./node_modules/.bin/webpack -p
+build: clean
+	NODE_ENV=production ./node_modules/.bin/webpack -p
 
-build-dev:
-	rm -rf static/assets/*
+dev: clean
 	./node_modules/.bin/webpack
 
 watch:
-	./node_modules/.bin/webpack --watch
+	./node_modules/.bin/webpack -w src/main.jsx
