@@ -6,7 +6,7 @@ module.exports = [
 	// es6 compile
 	{
 		entry: [
-			'./src/main.js',
+			'./src/main.jsx',
 		],
 		output: {
 			path: path.join(__dirname, 'static', 'assets'),
@@ -15,12 +15,12 @@ module.exports = [
 		module: {
 			loaders: [
 				{
+					test: /\.jsx$/,
 					loader: 'babel-loader',
 					exclude: /node_modules/,
-					test: /\.js$/,
 					query: {
 						cacheDirectory: true,
-						presets: ['es2015']
+						presets: ['es2015', 'react']
 					}
 				},
 			]
@@ -40,7 +40,15 @@ module.exports = [
 				{
  					test: /\.sass$/,
 					loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader")
-				}
+				},
+				{
+ 					test: /\.css$/,
+					loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+				},
+				{
+					test: /\.(otf|eot|svg|ttf|woff|woff2)(\?.+)?$/,
+					loader: 'url-loader'
+				},
 			]
 		},
 		plugins: [
