@@ -2,17 +2,25 @@
 
 <div class="container article">
 	<div class="row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
+		<div class="col-md-{{ if in .Params.categories "Photo" }}1{{ else }}2{{ end }}"></div>
+		<div class="col-md-{{ if in .Params.categories "Photo" }}10{{ else }}8{{ end }}">
 			<h1><a href="/">fixture.jp</a></h1>
-			<div id="react"></div>
 			<section class="post">
-				<h2>{{ .Title }}</h2>
+				<h2>
+					{{ .Title }}
+					{{ if .Params.location }}<small>{{ .Params.location }}</small>{{ end }}
+				</h2>
 				<article>
 					{{ .Content }}
 				</article>
+
+				{{ if in .Params.categories "Photo" }}<div><a href="/categories/photo/">See other journal</a></div>{{ end }}
+
 			</section>
-			{{ partial "_share.html" . }}
+			{{ if not .Site.BuildDrafts }}
+				{{ partial "_share.html" . }}
+			{{ end }}
+
 			<footer>
 				<div class="meta">
 					{{ partial "_postmeta.html" . }}
@@ -20,7 +28,7 @@
 				</div>
 			</footer>
 		</div><!-- /col-md-8 -->
-		<div class="col-md-2"></div>
+		<div class="col-md-{{ if in .Params.categories "Photo" }}1{{ else }}2{{ end }}"></div>
 	</div><!-- /row -->
 </div><!-- /container -->
 

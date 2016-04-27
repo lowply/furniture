@@ -20,7 +20,7 @@ body
   div.container
     margin: 100px auto
     div.row
-      div.col-md-8
+      div
         h1
           margin-bottom: 100px
           font-family: "Open Sans"
@@ -35,10 +35,12 @@ body
           margin: 40px 0 0
           padding: 40px 0 0
           border-top: solid 1px #999
+          div.meta
+            font-size: small
   div.container.index,
   div.container.list
     div.row
-      div.col-md-8
+      div
         section
           margin-bottom: 20px
           > a
@@ -50,7 +52,7 @@ body
             display: none
   div.container.index
     div.row
-      div.col-md-8
+      div
         div.top
           width: 600px
           height: 413px
@@ -62,15 +64,12 @@ body
           animation-direction: normal
   div.container.article
     div.row
-      div.col-md-8
+      div
         section
           article
             margin: 100px auto
             h3
               margin: 40px 0 20px
-            p
-              a
-                margin: 0 0.2em
         div.share
           div.twitter-share,
           div.fb-like,
@@ -81,6 +80,50 @@ body
             span
               // Fix for FB button valign
               vertical-align: baseline !important;
+
+body.photo
+  div.container.article
+    div
+      div
+        section.post
+          font-family: 'Times New Roman', serif
+          text-align: center
+          h2
+            margin: 10em auto
+            small
+              margin-top: 10px
+              font-size: 1rem
+              color: #aaa
+              display: block
+          h3,
+          p
+            margin: 6em auto 0
+  div.container.list
+    div.row
+      div
+        div.container
+          div.row
+            div.col-md-6
+              display: flex
+              section
+                font-family: 'Times New Roman', serif
+                text-align: center
+                width: 555px
+                a
+                  color: #373a3c
+                  display: block
+                a:hover
+                  text-decoration: none
+                  opacity: 0.8
+                div.meta
+                  time
+                    font-size: 1rem
+                h3
+                  margin: 1em auto
+                  small
+                    margin-top: 10px
+                    font-size: 1rem
+                    color: #aaa
+                    display: block
         footer
-          div.meta
-            font-size: small
+          margin-top: 6em
