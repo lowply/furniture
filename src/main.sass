@@ -10,13 +10,9 @@ body
     code.hljs
       padding: 1em
       border-radius: 4px
-    //   word-wrap: normal
-    //   white-space: pre
-
   blockquote
     font-size: 14px
     background-color: #f9f9f9
-
   div.container
     margin: 100px auto
     div.row
@@ -28,6 +24,9 @@ body
           font-weight: bold
           a
             color: #333
+            margin: 0 0.2em
+          a:first-child
+            margin-left: 0
           a:hover
             text-decoration: none
             color: #999
@@ -57,7 +56,7 @@ body
           width: 600px
           height: 413px
           margin: 0 auto 80px
-          background: url("/assets/img/main.png") no-repeat center center
+          background: url("/images/main.png") no-repeat center center
           animation-name: anime
           animation-duration: 0.5s
           animation-timing-function: ease
@@ -98,6 +97,8 @@ body.photo
           h3,
           p
             margin: 6em auto 0
+          >div
+            margin: 60px auto
   div.container.list
     div.row
       div
