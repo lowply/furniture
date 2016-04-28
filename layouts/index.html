@@ -2,23 +2,14 @@
 
 <div class="container index">
 	<div class="row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-			<h1><a href="/">fixture.jp</a></h1>
-			{{ range .Data.Pages }}
-			<section class="post">
-				<a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
-				<div class="meta">
-					<i class="fa fa-caret-right" aria-hidden="true"></i>
-					<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan, 2006" }}</time> {{ if isset .Params "categories" }} / {{ $baseUrl := .Site.BaseURL }} {{ range .Params.categories }}<a class="post-category" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }} {{ end }}
-				</div>
-			</section>
-			{{ end }}
-			{{ partial "_meta.html" . }}
-		</div><!-- /col-md-8 -->
-		<div class="col-md-2"></div>
-	</div><!-- /row -->
-</div><!-- /container -->
+		<div class="col-md-12">
+			<div class="top">
+			</div>
+			<div class="text-xs-center">
+				<a href="/blog/">Blog</a> | <a href="/photo/">Photo</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 {{ partial "footer.html" . }}
-

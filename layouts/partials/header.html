@@ -20,5 +20,5 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/assets/main.css">
 </head>
-<body class="{{ if or (in .Params.categories "Photo") (eq .URL "/categories/photo/") }}photo{{ else }}normal{{ end }}">
+<body class="{{ .Section }}{{ if eq .URL "/photo/" }}photo{{ end }}">
 {{ partial "_fb.html" . }}

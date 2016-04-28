@@ -2,32 +2,9 @@
 
 <div class="container list">
 	<div class="row">
-
-		{{ if eq .Title "Photo" }}
-		<div class="col-md-12">
-			<h1><a href="/">fixture.jp</a></h1>
-			<div class="container">
-				<div class="row">
-					{{ range .Data.Pages }}
-					<div class="col-md-6">
-					<section class="post">
-						<a href="{{ .Permalink }}" class="post-title">
-						<img src="{{ .Params.topimg }}" alt="{{ .Title }}" width="100%" />
-						<h3>{{ .Title }}<small>{{ .Params.location }}</small></h3>
-						</a>
-					</section>
-					</div>
-					{{ end }}
-				</div>
-			</div>
-			{{ partial "_meta.html" . }}
-		</div><!-- /col-md-8 -->
-
-		{{ else }}
-
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
-			<h1><a href="/">fixture.jp</a></h1>
+			<h1><a href="/">fixture.jp</a>/<a href="/blog/">blog</a></h1>
 			{{ range .Data.Pages }}
 			<section class="post">
 				<a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
@@ -40,8 +17,6 @@
 			{{ partial "_meta.html" . }}
 		</div><!-- /col-md-8 -->
 		<div class="col-md-2"></div>
-		{{ end }}
-
 	</div><!-- /row -->
 </div><!-- /container -->
 

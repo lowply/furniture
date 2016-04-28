@@ -2,21 +2,23 @@
 
 <div class="container article">
 	<div class="row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-			<h1><a href="/">fixture.jp</a>/<a href="/blog/">blog</a></h1>
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<h1><a href="/">fixture.jp</a>/<a href="/photo/">photo</a></h1>
 			<section class="post">
 				<h2>
 					{{ .Title }}
+					<small>{{ .Params.location }}</small>
 				</h2>
 				<article>
 					{{ .Content }}
 				</article>
+				<div><a href="/photo/">See other photo journals</a></div>
 			</section>
 			{{ if not .Site.BuildDrafts }}{{ partial "_share.html" . }}{{ end }}
 			{{ partial "_meta.html" . }}
-		</div><!-- /col-md-8 -->
-		<div class="col-md-2"></div>
+		</div><!-- /col-md-10 -->
+		<div class="col-md-1"></div>
 	</div><!-- /row -->
 </div><!-- /container -->
 
