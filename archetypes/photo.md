@@ -5,4 +5,7 @@ categories = [""]
 tags = [""]
 description = ""
 draft = true
+location  = ""
+topimg = ""
 +++
+
