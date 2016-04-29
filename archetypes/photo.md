@@ -2,7 +2,7 @@
 title = ""
 date = ""
 description = ""
-draft = true
+draft = false
 location  = ""
 topimg = ""
 camera = ""
