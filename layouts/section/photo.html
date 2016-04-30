@@ -9,10 +9,11 @@
 					{{ range .Data.Pages }}
 					<div class="col-md-6">
 					<section class="post">
-						<a href="{{ .Permalink }}" class="post-title">
-							<img src="{{ .Params.topimg }}" alt="{{ .Title }}" width="100%" />
-							<h3>{{ .Title }}<small>{{ .Params.location }}</small></h3>
-						</a>
+						<h2>
+							<a href="{{ .Permalink }}" class="post-title" style="background-image:url({{ .Params.topimg }});"></a>
+							{{ .Title }}
+							<small>{{ .Params.location }}</small>
+						</h2>
 					</section>
 					</div>
 					{{ end }}

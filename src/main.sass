@@ -72,8 +72,8 @@ body
               vertical-align: baseline !important;
 
 body.photo
-  div.container.article
-    div
+  div.container
+    div.row
       div
         section.post
           font-family: 'Times New Roman', serif
@@ -85,11 +85,17 @@ body.photo
               font-size: 1rem
               color: #aaa
               display: block
+
+  div.container.article
+    div.row
+      div
+        section.post
           h3,
           p
             margin: 6em auto 0
           >div
             margin: 60px auto
+
   div.container.list
     div.row
       div
@@ -97,25 +103,23 @@ body.photo
           div.row
             div.col-md-6
               display: flex
-              section
-                font-family: 'Times New Roman', serif
-                text-align: center
-                width: 555px
-                a
-                  color: #373a3c
-                  display: block
-                a:hover
-                  text-decoration: none
-                  opacity: 0.8
+              section.post
+                width: 100%
+                h2
+                  margin: 1em auto
+                  a
+                    color: #373a3c
+                    display: block
+                    padding-top: 200px
+                    margin-bottom: 0.8em
+                    min-height: 100px
+                    background-size: cover
+                    background-repeat: no-repeat
+                    background-position: center center
+                  a:hover
+                    opacity: 0.8
                 div.meta
                   time
                     font-size: 1rem
-                h3
-                  margin: 1em auto
-                  small
-                    margin-top: 10px
-                    font-size: 1rem
-                    color: #aaa
-                    display: block
         footer
           margin-top: 6em
