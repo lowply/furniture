@@ -7,7 +7,11 @@
 			<h1><a href="/">fixture.jp</a></h1>
 			<div class="top"><img src="/images/main.png" width="100%"></div>
 			<div class="text-xs-center">
-				<a href="/blog/">Blog</a> | <a href="/photo/">Photo</a>
+				<ul class="list-inline">
+					{{ range $section, $pages := .Site.Sections }}
+					<li class="list-inline-item"><a class="text-capitalize" href="/{{ $section }}/">{{ $section }}</a></li>
+					{{ end }}
+				</ul>
 			</div>
 		</div><!-- /col-md-8 -->
 		<div class="col-md-2"></div>
