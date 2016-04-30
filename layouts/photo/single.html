@@ -15,7 +15,14 @@
 				</article>
 				<div><a href="/photo/">See other photo journals</a></div>
 			</section>
-			{{ if not .Site.BuildDrafts }}{{ partial "_share.html" . }}{{ end }}
+			<nav>
+				<ul class="pager">
+					{{ if .PrevInSection }}<li class="pager-prev"><a href="{{ .PrevInSection.Permalink }}">Prev</a></li>{{ end }}
+					{{ if .NextInSection }}<li class="pager-next"><a href="{{ .NextInSection.Permalink }}">Next</a></li>{{ end }}
+				</ul>
+			</nav>
+			{{ $baseurl := printf "%s" .Site.BaseURL }}
+			{{ if not (eq $baseurl "http://p.fixture.jp/") }}{{ partial "_share.html" . }}{{ end }}
 			{{ partial "_meta.html" . }}
 		</div><!-- /col-md-10 -->
 		<div class="col-md-1"></div>
