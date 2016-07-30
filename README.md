@@ -48,19 +48,19 @@ Frontend:
 
 ### Node
 
-Versions as of Apr 2016:
+Versions as of Jul 2016:
 
 ```
 $ n --version
-2.1.0
+2.1.3
 
 $ n latest
 
 $ node -v
-v5.11.0
+v6.3.1
 
 $ npm -v
-3.8.6
+3.10.3
 ```
 
 ### Bootstrap
