@@ -15,8 +15,8 @@
 			</section>
 			<nav>
 				<ul class="pager">
-					{{ if .PrevInSection }}<li class="pager-prev"><a href="{{ .PrevInSection.Permalink }}">Prev</a></li>{{ end }}
-					{{ if .NextInSection }}<li class="pager-next"><a href="{{ .NextInSection.Permalink }}">Next</a></li>{{ end }}
+					{{ if .PrevInSection }}<li class="pager-prev"><a href="{{ .PrevInSection.RelPermalink }}">Prev</a></li>{{ end }}
+					{{ if .NextInSection }}<li class="pager-next"><a href="{{ .NextInSection.RelPermalink }}">Next</a></li>{{ end }}
 				</ul>
 			</nav>
 			{{ $baseurl := printf "%s" .Site.BaseURL }}
