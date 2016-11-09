@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lowply/furniture.svg?branch=travis)](https://travis-ci.org/lowply/furniture)
+
 # Furniture - A hugo theme for fixture.jp
 
 This theme is made for [fixture.jp](http://fixture.jp/).
