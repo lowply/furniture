@@ -10,10 +10,10 @@ before_deploy:
   - mv theme.toml archetypes layouts static release-$TRAVIS_TAG
   - tar czf releases-$TRAVIS_TAG.tar.gz release-$TRAVIS_TAG
   - zip -q releases-$TRAVIS_TAG.zip release-$TRAVIS_TAG
-  - git config --global user.name "Travis CI"
-  - git config --global user.email "travis@travis-ci.org"
-  - git tag $TRAVIS_TAG -a -m "Commit from Travis CI for build $TRAVIS_BUILD_NUMBER"
-  - git push --quiet https://$GH_TOKEN@github.com/lowply/furniture.git --tags 2> /dev/null
+  # - git config --global user.name "Travis CI"
+  # - git config --global user.email "travis@travis-ci.org"
+  # - git tag $TRAVIS_TAG -a -m "Commit from Travis CI for build $TRAVIS_BUILD_NUMBER"
+  # - git push --quiet https://$GH_TOKEN@github.com/lowply/furniture.git --tags 2> /dev/null
 deploy:
   provider: releases
   skip_cleanup: true
