@@ -9,7 +9,7 @@ before_deploy:
   - mkdir release-$GIT_TAG
   - mv theme.toml archetypes layouts static release-$GIT_TAG
   - tar czf releases-$GIT_TAG.tar.gz release-$GIT_TAG
-  - zip -q releases-$GIT_TAG.tar.gz release-$GIT_TAG
+  - zip -q releases-$GIT_TAG.zip release-$GIT_TAG
   - git config --global user.name "Travis CI"
   - git config --global user.email "travis@travis-ci.org"
   - git tag $GIT_TAG -a -m "Commit from Travis CI for build $TRAVIS_BUILD_NUMBER"
@@ -19,7 +19,11 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: GCkhuqscaC9bDhtpHFkMCmNGqPby0acrUYEwIaWhmo6UOOsvdRbS0cQGQ2OiH/dl7h7BCRYo8VBS/z6CO/W7rcJgyAhsLiqLjiZvJNUAyQ2upu2djN8ul4r1z/m2FXuFoLlIcOL6KipJWsuP3j5ijMSwdLqMIL0/08V7G1hLjzZQel5BaXVAiWJV0RlNu4em8SlDtUGOFwgDXXWRPVILUglLn8q7slkn77nD/6wm9cRWC8ApOJtYqhNSNX3QpQNxu+duqNIVAFLb3W/Wx5jS6dpQh20xpV+Bu6JYS2oCREa1ZFXlm1OWAPc5XkJK40NJik72FMXJX0e48WWgPsh49j2ytZ7jAdSUzW1P0OkQVeLaD7s5pMShLElT5MBvo93BSCYDFB1TaxjJ3MJyVBjYSnlO0ea7r1RJKywxxXSJVbUJanCYsHzM13Tp8Wd7u6joHwh0ualPVW4oNLR4hujK1l1ThxtBXu2Nrk03KnziOwTDSIqvgjnfqIDkC1IU8gom+ckEdycdFTjil/vVl92dQV9YPOBeidp/HgpBCCjT7xt3scOKo+MocHwLReNa02hzbM9DAGdYrLE9AFzSWk/aMSwSt00jLU/JAvJ/3diuYSSOHN+2lPmco6JbzOezBEvyM044MVmpCJyv6LyaBbqTQoMN0dYN/r9Xbak/+hYulvQ=
-  file: data.tar.gz
+  file:
+    - releases-$GIT_TAG.tar.gz
+    - releases-$GIT_TAG.zip
   on:
     repo: lowply/furniture
     branch: travis
+    tags: true
+
