@@ -27,13 +27,22 @@ See [theme.toml](https://github.com/lowply/furniture/blob/master/theme.toml) for
 
 ```
 $ cd /path/to/hugo/themes/
+$ curl -OL https://github.com/lowply/furniture/releases/download/[version]/furniture.tar.gz
+$ tar vzxf furniture.tar.gz
+```
+
+And start hugo dev server.
+
+### Development
+
+```
 $ git clone https://github.com/lowply/furniture.git
 $ cd furniture
 $ make install
 $ make build
 ```
 
-And start hugo dev server. Read Makefile for more tasks.
+Read Makefile for tasks.
 
 ### Dependencies
 
@@ -71,7 +80,7 @@ Furniture uses [Bootstrap](http://getbootstrap.com/) and has responsive layout.
 
 ### Fonts
 
-For OS X environment, "Helvetica Neue Light" and "HiraKakuInterface-W2" is the primary font. For Windows environment, Meiryo is the primary font.
+For macOS environment, "Helvetica Neue Light" and "HiraKakuInterface-W2" is the primary font. For Windows environment, Meiryo is the primary font.
 Uses ["Open Sans" by Google](https://www.google.com/fonts/specimen/Open+Sans) webfont for the title logo.
 
 ### Author
