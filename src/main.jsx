@@ -12,5 +12,5 @@ import Highlight from 'highlight.js';
 
 Highlight.initHighlightingOnLoad();
 
-var image_url = $(".hb-button.http a").attr("href").replace(/entry\/http/, 'entry\/image\/http')
+var image_url = $(".hb-button.http a").attr("href").replace(/entry\/https/, 'entry\/image\/http')
 $(".hb-button.http a").append('<img src="' + image_url + '" />')
