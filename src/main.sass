@@ -60,16 +60,23 @@ body
               font-size: 1rem
         div.share
           margin: 80px auto 40px
-          div.fb-like,
-          div.twitter-share,
-          div.hb-button
+          div
+            vertical-align: top
             display: inline-block
-            margin-right: 0.8em
+            margin-right: 0.1em
           div.fb-like
             span
               // Fix for FB button valign
-              vertical-align: baseline !important;
-
+              vertical-align: top !important;
+          div.hb-button.http
+            height: 20px
+            line-height: 20px
+          div.hb-button.http
+            small:before
+              content: "("
+            small:after
+              content: ")"
+                
 body.photo
   div.container
     div.row
