@@ -12,5 +12,8 @@ import Highlight from 'highlight.js';
 
 Highlight.initHighlightingOnLoad();
 
-var image_url = $(".hb-button.http a").attr("href").replace(/entry\/https/, 'entry\/image\/http')
-$(".hb-button.http a").append('<img src="' + image_url + '" />')
+var http_url = "http://fixture.jp" + $(".hb-button.http a").attr("href")
+var hb_url = "http://b.hatena.ne.jp/entry/" + http_url
+var hb_count_img = "http://b.hatena.ne.jp/entry/image/" + http_url
+$(".hb-button.http small a").attr("href", hb_url)
+$(".hb-button.http small a").append('<img src="' + hb_count_img + '" />')
