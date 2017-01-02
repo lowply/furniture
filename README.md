@@ -23,19 +23,10 @@ min_version = 0.15
 
 See [theme.toml](https://github.com/lowply/furniture/blob/master/theme.toml) for the latest config.
 
-### Installation
+### Installation/Development
 
 ```
 $ cd /path/to/hugo/themes/
-$ curl -OL https://github.com/lowply/furniture/releases/download/[version]/furniture.tar.gz
-$ tar vzxf furniture.tar.gz
-```
-
-And start hugo dev server.
-
-### Development
-
-```
 $ git clone https://github.com/lowply/furniture.git
 $ cd furniture
 $ make install
@@ -59,29 +50,15 @@ Frontend:
 
 ### Node
 
-Versions as of Jul 2016:
+Versions as of Jan 2017:
 
 ```
-$ n --version
-2.1.3
-
-$ n latest
-
 $ node -v
-v6.3.1
+v6.9.1
 
 $ npm -v
-3.10.3
+3.10.8
 ```
-
-### Bootstrap
-
-Furniture uses [Bootstrap](http://getbootstrap.com/) and has responsive layout.
-
-### Fonts
-
-For macOS environment, "Helvetica Neue Light" and "HiraKakuInterface-W2" is the primary font. For Windows environment, Meiryo is the primary font.
-Uses ["Open Sans" by Google](https://www.google.com/fonts/specimen/Open+Sans) webfont for the title logo.
 
 ### Author
 
