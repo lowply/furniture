@@ -1,6 +1,6 @@
-# Furniture - A hugo theme for fixture.jp
+# Furniture - A hugo theme for lowply.github.io
 
-This theme is made for [fixture.jp](http://fixture.jp/).
+This theme is made for [lowply.github.io](https://lowply.github.io/).
 
 ### Theme config
 
@@ -11,7 +11,7 @@ This theme is made for [fixture.jp](http://fixture.jp/).
 name = "Furniture"
 license = "MIT"
 licenselink = "https://github.com/lowply/furniture/blob/master/LICENSE"
-description = "Furniture - A hugo theme for fixture.jp"
+description = "Furniture - A hugo theme for lowply.github.io"
 homepage = "https://github.com/lowply/furniture/"
 tags = ["blog"]
 min_version = 0.15
