@@ -1,3 +1,3 @@
-node_modules
-static/assets/*
-!.gitkeep
+.sass-cache/*
+static/assets/main.css
+static/assets/main.css.map
