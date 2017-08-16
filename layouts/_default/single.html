@@ -14,9 +14,9 @@
 				</article>
 			</section>
 			<nav>
-				<ul class="pager">
-					{{ if .PrevInSection }}<li class="pager-prev"><a href="{{ .PrevInSection.RelPermalink }}">Prev</a></li>{{ end }}
-					{{ if .NextInSection }}<li class="pager-next"><a href="{{ .NextInSection.RelPermalink }}">Next</a></li>{{ end }}
+				<ul class="pagination pagination-sm justify-content-center">
+					{{ if .PrevInSection }}<li class="page-item"><a class="page-link" href="{{ .PrevInSection.RelPermalink }}">Prev</a></li>{{ end }}
+					{{ if .NextInSection }}<li class="page-item"><a class="page-link" href="{{ .NextInSection.RelPermalink }}">Next</a></li>{{ end }}
 				</ul>
 			</nav>
 			{{ $baseurl := printf "%s" .Site.BaseURL }}
