@@ -1,8 +1,9 @@
 +++
-title = ""
+categories = [""]
 date = ""
 description = ""
 draft = false
-categories = [""]
-tags = [""]
+slug = ""
+title = ""
+
 +++
