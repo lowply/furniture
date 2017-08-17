@@ -20,6 +20,7 @@
 				</ul>
 			</nav>
 			{{ $baseurl := printf "%s" .Site.BaseURL }}
+			{{ if not .Site.BuildDrafts }}{{ partial "_share.html" . }}{{ end }}
 			{{ partial "_meta.html" . }}
 		</div><!-- /col-md-8 -->
 		<div class="col-md-2"></div>
