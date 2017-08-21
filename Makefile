@@ -4,7 +4,7 @@ install:
 	bundle install
 
 watch:
-	sass -w static/assets/main.sass:static/assets/main.css
+	sass -w --sourcemap=auto static/assets/main.sass:static/assets/main.css
 
 build:
-	sass -t compressed static/assets/main.sass > static/assets/main.css
+	sass -t compressed --sourcemap=auto static/assets/main.sass > static/assets/main.css
