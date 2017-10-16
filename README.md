@@ -27,8 +27,8 @@ min_version = 0.15
 $ cd /path/to/hugo/themes/
 $ git clone https://github.com/lowply/furniture.git
 $ cd furniture
-$ make install
-$ make build
+$ npm install
+$ npm run sass
 ```
 
 ### Author

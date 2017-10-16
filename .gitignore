@@ -1,3 +1,4 @@
 .sass-cache/*
 static/assets/main.css
 static/assets/main.css.map
+node_modules/*
