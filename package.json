@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"sass": "node-sass --output-style compressed --source-map true ./static/assets/main.sass -o ./static/assets",
+    "sass": "node-sass --output-style compressed --source-map true ./static/assets/main.sass -o ./static/assets",
     "sassw": "node-sass -w --output-style compressed --source-map true ./static/assets/main.sass -o ./static/assets"
   },
   "repository": {
